@@ -29,7 +29,6 @@ public class BookingService {
         User user = userRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
         Trip trip = tripRepository.findById(tripId).orElseThrow(() -> new RuntimeException("Trip not found"));
 
-        // Parse seat numbers and check availability
         String[] seats = seatNumbers.split(",");
         for (String seat : seats) {
             int seatNum = Integer.parseInt(seat.trim());
@@ -42,7 +41,7 @@ public class BookingService {
         Booking booking = new Booking();
         booking.setUser(user);
         booking.setTrip(trip);
-        booking.setSeatNumber(Integer.parseInt(seats[0].trim())); // backward compat
+        booking.setSeatNumber(Integer.parseInt(seats[0].trim()));
         booking.setSeatNumbers(seatNumbers);
         booking.setBookingDate(LocalDateTime.now());
         booking.setStatus("BOOKED");
@@ -57,7 +56,6 @@ public class BookingService {
         return bookingRepository.save(booking);
     }
 
-    // Legacy single-seat booking for backward compatibility
     public Booking createBooking(Long userId, Long tripId, Integer seatNumber) {
         return createBooking(userId, tripId, String.valueOf(seatNumber),
                 null, null, null, null, null, null, null);

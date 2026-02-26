@@ -16,7 +16,6 @@ public class UserService {
         if (userRepository.findByEmail(user.getEmail()).isPresent()) {
             throw new RuntimeException("Email already registered");
         }
-        // In real app, encode password here
         return userRepository.save(user);
     }
 

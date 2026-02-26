@@ -16,14 +16,9 @@ public class Bus {
 
     @Column(unique = true, nullable = false)
     private String busNumber;
-
     private String operatorName;
-
-    private String type; // AC, Non-AC, Sleeper
-
+    private String type;
     private int totalSeats;
-
     private Double rating;
-
-    private String amenities; // Comma-separated list
+    private String amenities;
 }

@@ -32,12 +32,10 @@ public class TripService {
 
         Stream<Trip> stream = trips.stream();
 
-        // Filter by bus type
         if (busType != null && !busType.isEmpty()) {
             stream = stream.filter(t -> t.getBus().getType().equalsIgnoreCase(busType));
         }
 
-        // Filter by departure hour range
         if (departureAfter != null) {
             stream = stream.filter(t -> t.getDepartureTime().getHour() >= departureAfter);
         }
@@ -45,7 +43,6 @@ public class TripService {
             stream = stream.filter(t -> t.getDepartureTime().getHour() < departureBefore);
         }
 
-        // Filter by price range
         if (minPrice != null) {
             stream = stream.filter(t -> t.getPrice() >= minPrice);
         }
@@ -53,7 +50,6 @@ public class TripService {
             stream = stream.filter(t -> t.getPrice() <= maxPrice);
         }
 
-        // Sort
         if (sortBy != null) {
             switch (sortBy.toLowerCase()) {
                 case "price":

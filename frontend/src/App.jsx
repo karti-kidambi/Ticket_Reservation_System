@@ -11,7 +11,6 @@ import TrackBus from './pages/TrackBus';
 import CancelTicket from './pages/CancelTicket';
 import BookingConfirmation from './pages/BookingConfirmation';
 import Help from './pages/Help';
-import './App.css';
 
 function App() {
   return (

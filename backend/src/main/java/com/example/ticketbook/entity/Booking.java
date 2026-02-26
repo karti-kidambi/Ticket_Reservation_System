@@ -23,25 +23,15 @@ public class Booking {
     @JoinColumn(name = "trip_id")
     private Trip trip;
 
-    private Integer seatNumber; // Simplified seat representation
-
-    private String seatNumbers; // Comma-separated for multi-seat, e.g. "1,2,3"
-
+    private Integer seatNumber;
+    private String seatNumbers;
     private LocalDateTime bookingDate;
-
-    private String status; // BOOKED, CANCELLED
-
+    private String status;
     private String passengerName;
-
     private Integer passengerAge;
-
-    private String passengerGender; // MALE, FEMALE, OTHER
-
+    private String passengerGender;
     private String email;
-
     private String boardingPoint;
-
     private String droppingPoint;
-
     private Double totalAmount;
 }

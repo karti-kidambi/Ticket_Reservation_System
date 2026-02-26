@@ -20,7 +20,6 @@ const Layout = () => {
 
     return (
         <div className="min-h-screen flex flex-col" style={{ background: 'var(--tb-bg)' }}>
-            {/* Header */}
             <header className="bg-[var(--tb-surface)]/80 backdrop-blur-xl border-b border-[var(--tb-border)] sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
                     <Link to="/" className="flex items-center gap-2 font-extrabold text-xl text-[var(--tb-primary-light)]">
@@ -70,7 +69,6 @@ const Layout = () => {
 
             <main className="flex-1"><Outlet /></main>
 
-            {/* Footer */}
             <footer className="bg-[#0c1222] border-t border-[var(--tb-border)]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

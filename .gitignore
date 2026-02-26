@@ -1,0 +1,40 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Bundled Maven
+apache-maven-3.9.6/
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+package-lock.json
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Environment
+.env
+*.env.local
+
+# Explanation file
+explanation.md

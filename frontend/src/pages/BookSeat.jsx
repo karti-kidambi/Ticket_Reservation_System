@@ -110,7 +110,6 @@ const BookSeat = () => {
             <p className="text-center text-sm text-[var(--tb-text-muted)] mb-8">You can select up to 6 seats</p>
 
             <div className="flex flex-col lg:flex-row gap-8">
-                {/* Seat Map */}
                 <div className="flex-1 bg-[var(--tb-surface)] p-8 rounded-2xl border border-[var(--tb-border)]">
                     <div className="mb-6 flex flex-wrap gap-4 text-sm justify-center text-[var(--tb-text-muted)]">
                         <div className="flex items-center gap-2"><div className="w-4 h-4 border border-[var(--tb-border)] rounded bg-[var(--tb-bg)]"></div> Available</div>
@@ -147,7 +146,6 @@ const BookSeat = () => {
                     )}
                 </div>
 
-                {/* Right panel */}
                 <div className="w-full lg:w-96 space-y-6">
                     <div className="bg-[var(--tb-surface)] p-6 rounded-2xl border border-[var(--tb-border)]">
                         <h3 className="text-lg font-bold mb-4 border-b border-[var(--tb-border)] pb-2 text-white">Passenger Details</h3>

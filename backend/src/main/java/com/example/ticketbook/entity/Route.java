@@ -16,5 +16,5 @@ public class Route {
 
     private String source;
     private String destination;
-    private Double distance; // in km
+    private Double distance;
 }

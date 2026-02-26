@@ -25,12 +25,8 @@ public class Trip {
 
     private LocalDateTime departureTime;
     private LocalDateTime arrivalTime;
-
     private Double price;
-
-    private String boardingPoints; // Comma-separated, e.g. "Dadar, Thane, Kalyan"
-
-    private String droppingPoints; // Comma-separated
-
+    private String boardingPoints;
+    private String droppingPoints;
     private Integer availableSeats;
 }

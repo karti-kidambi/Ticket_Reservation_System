@@ -52,7 +52,6 @@ const Home = () => {
 
     return (
         <div>
-            {/* Hero */}
             <section className="relative overflow-hidden">
                 <div className="absolute inset-0" style={{ background: 'var(--tb-gradient-hero)' }}></div>
                 <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#6366f1] opacity-[0.07] blur-3xl"></div>
@@ -88,7 +87,6 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Search Card */}
                         <div className="bg-[var(--tb-surface)] rounded-3xl shadow-2xl shadow-black/20 p-6 md:p-8 border border-[var(--tb-border)]">
                             <h2 className="text-xl font-bold text-white mb-6">Search buses</h2>
                             <form onSubmit={handleSearch} className="space-y-4">
@@ -187,7 +185,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Features */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {[
@@ -203,7 +200,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Popular Routes */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
                 <div className="bg-[var(--tb-surface)] rounded-3xl border border-[var(--tb-border)] p-8">
                     <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
